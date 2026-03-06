@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <form>
+        <label for="name">Name</label>
+        <input type="text" id="name"> <br><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email"> <br><br>
+
+        <label for="password">Password</label>
+        <input type="number" id="password"> <br><br>
+
+        <label for="conf-password">Confirm Password</label>
+        <input type="number" value="un" id="conf-password"> <br>
+
+        <label for="Datepicker">Datepicker</label>
+        <input type="date" id="Datepicker">
+        
+        <label for="fileselect">Select the file</label>
+        <input type="file" id="fileselect">
+
+        <button>Submit</button>
+    </form>  -->
+        
+    <form action="">
+        <fieldset>
+            <legend>Event Registration</legend>
+            <label for="name">Name</label>
+            <input type="text" id="name"> <br><br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email"> <br><br>
+
+            <label for="phone">Phone</label>
+            <input type="number" id="phone"> <br><br>
+
+            <label for="occupationType">Occupation</label>
+            <select name="occupationType" id="occupationType"> 
+                <option value="#">Other</option> 
+                <option value="#">Teacher</option>
+                <option value="#">Student</option>
+                <option value="#">Employee</option>
+                <option value="#">Mern-Stack Developer</option>
+                <option value="#">Python-Developer</option>
+                <option value="#">Java-Developer</option> 
+            </select>
+            <br> 
+
+            <h2>Topics of Internship</h2>
+            <input type="radio" id="html" name="tick">
+            <label for="html">HTML</label> <br>
+
+            <input type="radio" id="css" name="tick">
+            <label for="css">CSS</label> <br>
+
+            <input type="radio" id="js" name="tick">
+            <label for="js">JavaScript</label> <br>
+
+            <label for="phoneNumber">Phone No:</label>
+            <input type="tel" id="phoneNumber" name="tick"> <br>
+            
+            <p>Comments : </p>
+            <textarea rows="10" cols="60" placeholder="Comments here" ></textarea>
+
+        <button>Submit</button> 
+
+        </fieldset>
+    </form>
+
+    <!--  -->
+
+<form>
+  <input type="checkbox" name="topic" value="html" onclick="onlyOne(this)">
+  HTML <br>
+
+  <input type="checkbox" name="topic" value="css" onclick="onlyOne(this)">
+  CSS <br>
+
+  <input type="checkbox" name="topic" value="js" onclick="onlyOne(this)">
+  JavaScript <br>
+
+  <input type="checkbox" name="topic" value="react" onclick="onlyOne(this)">
+  React <br><br>
+
+  <button type="submit">Submit</button>
+</form>
+
+<script>
+  function onlyOne(checkbox) {
+    const checkboxes = document.getElementsByName('topic');
+    checkboxes.forEach((item) => {
+      if (item !== checkbox) item.checked = false;
+    });
+  }
+</script>
+
+</body>
+</html> 
